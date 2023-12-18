@@ -1,0 +1,6 @@
+set_property PACKAGE_PIN M17 [get_ports {gpio_io_o_0[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_io_o_0[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports UART_0_rxd]
+set_property IOSTANDARD LVCMOS33 [get_ports UART_0_txd]
+set_property PACKAGE_PIN W16 [get_ports UART_0_rxd]
+set_property PACKAGE_PIN V16 [get_ports UART_0_txd]

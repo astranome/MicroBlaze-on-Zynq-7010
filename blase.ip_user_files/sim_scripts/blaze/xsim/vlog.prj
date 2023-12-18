@@ -1,0 +1,13 @@
+verilog xil_defaultlib --include "../../../../blase.srcs/sources_1/bd/blaze/ipshared/4903" --include "../../../../blase.srcs/sources_1/bd/blaze/ipshared/ec67/hdl" --include "../../../../blase.srcs/sources_1/bd/blaze/ipshared/02c8/hdl/verilog" --include "../../../../blase.srcs/sources_1/bd/blaze/ipshared/b193/hdl" \
+"../../../bd/blaze/ip/blaze_microblaze_mcs_0_0/bd_0/ip/ip_6/sim/bd_974d_lmb_bram_I_0.v" \
+"../../../bd/blaze/ip/blaze_microblaze_mcs_0_0/bd_0/sim/bd_974d.v" \
+"../../../bd/blaze/ip/blaze_microblaze_mcs_0_0/sim/blaze_microblaze_mcs_0_0.v" \
+"../../../bd/blaze/ip/blaze_clk_wiz_1_0/blaze_clk_wiz_1_0_clk_wiz.v" \
+"../../../bd/blaze/ip/blaze_clk_wiz_1_0/blaze_clk_wiz_1_0.v" \
+"../../../bd/blaze/ip/blaze_processing_system7_0_0/sim/blaze_processing_system7_0_0.v" \
+"../../../bd/blaze/ip/blaze_lmb_bram_0/sim/blaze_lmb_bram_0.v" \
+"../../../bd/blaze/sim/blaze.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

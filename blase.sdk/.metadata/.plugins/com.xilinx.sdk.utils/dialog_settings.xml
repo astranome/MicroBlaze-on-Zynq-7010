@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="H:\FPGA\VGA\blase\blase.sdk\Blaze_lesson\boot" key="bootgen_files_selection"/>
+	<item value="H:\FPGA\VGA\blase\blase.runs\impl_1" key="debug_files_selection"/>
+	<item value="H:\FPGA\VGA\blase\blase.sdk\Blaze_lesson\boot" key="last_stored_selection"/>
+</section>

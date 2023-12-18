@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Dec 18 08:31:42 2023
+# Process ID: 18444
+# Current directory: H:/FPGA/VGA/blase/blase.runs/blaze_rst_ps7_0_100M_0_synth_1
+# Command line: vivado.exe -log blaze_rst_ps7_0_100M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blaze_rst_ps7_0_100M_0.tcl
+# Log file: H:/FPGA/VGA/blase/blase.runs/blaze_rst_ps7_0_100M_0_synth_1/blaze_rst_ps7_0_100M_0.vds
+# Journal file: H:/FPGA/VGA/blase/blase.runs/blaze_rst_ps7_0_100M_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blaze_rst_ps7_0_100M_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP blaze_rst_ps7_0_100M_0, cache-ID = 205ef3efa1adc497.
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 18 08:31:55 2023...

@@ -1,0 +1,578 @@
+10:38:52 **** Clean-only build of configuration Debug for project Blaze_lesson ****
+make clean 
+rm -rf  ./src/proga.o  ./src/proga.d  Blaze_lesson.elf.size  Blaze_lesson.elf
+' '
+10:38:52 **** Incremental Build of configuration Debug for project Blaze_lesson ****
+make all 
+'Building file: ../src/proga.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/proga.o" -I../../Blaze_lesson_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/proga.d" -MT"src/proga.o" -o "src/proga.o" "../src/proga.c"
+'Finished building: ../src/proga.c'
+' '
+'Building target: Blaze_lesson.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Blaze_lesson_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Blaze_lesson.elf"  ./src/proga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Blaze_lesson.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Blaze_lesson.elf  |tee "Blaze_lesson.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6252	    292	   2112	   8656	   21d0	Blaze_lesson.elf
+'Finished building: Blaze_lesson.elf.size'
+' '
+10:38:59 **** Incremental Build of configuration Debug for project Blaze_lesson ****
+make all 
+make: Цель `all' не требует выполнения команд.
+10:39:51 **** Incremental Build of configuration Debug for project Blaze_lesson ****
+make all 
+make: Цель `all' не требует выполнения команд.
+11:10:12 **** Incremental Build of configuration Debug for project Blaze_lesson ****
+make all 
+make: Цель `all' не требует выполнения команд.
+15:43:44 **** Incremental Build of configuration Debug for project Blaze_lesson ****
+make all 
+make: Цель `all' не требует выполнения команд.
+15:48:42 **** Build of project FSBLaze_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_6/src"
+make -C microblaze_0/libsrc/standalone_v6_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_6/src"
+make -C microblaze_0/libsrc/standalone_v6_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+15:48:57 **** Build of configuration Debug for project FSBLaze ****
+make all 
+'Building file: ../src/bootloader.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bootloader.o" -I../../FSBLaze_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bootloader.d" -MT"src/bootloader.o" -o "src/bootloader.o" "../src/bootloader.c"
+In file included from ../src/bootloader.c:56:0:
+../src/blconfig.h:32:2: warning: #warning "Please provide the correct address value for the definition FLASH_IMAGE_BASEADDR." [-Wcpp]
+ #warning "Please provide the correct address value for the definition FLASH_IMAGE_BASEADDR."
+  ^~~~~~~
+'Finished building: ../src/bootloader.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../FSBLaze_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/srec.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/srec.o" -I../../FSBLaze_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/srec.d" -MT"src/srec.o" -o "src/srec.o" "../src/srec.c"
+'Finished building: ../src/srec.c'
+' '
+'Building target: FSBLaze.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FSBLaze_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "FSBLaze.elf"  ./src/bootloader.o ./src/platform.o ./src/srec.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FSBLaze.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size FSBLaze.elf  |tee "FSBLaze.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6248	    280	   1464	   7992	   1f38	FSBLaze.elf
+'Finished building: FSBLaze.elf.size'
+' '
+15:51:40 **** Auto Build of project FSBLaze_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/lwip202_v1_0/src"
+make -C microblaze_0/libsrc/lwip202_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/xilffs_v3_8/src"
+make -C microblaze_0/libsrc/xilffs_v3_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+In file included from xbram.c:62:0:
+xbram.h:136:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from xbram_g.c:54:0:
+xbram.h:136:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from xbram_intr.c:58:0:
+xbram.h:136:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from xbram_selftest.c:72:0:
+xbram.h:136:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+xbram_sinit.c:59:10: fatal error: xstatus.h: No such file or directory
+ #include "xstatus.h"
+          ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [libs] Ошибка 1
+make: *** [microblaze_0/libsrc/bram_v4_2/src/make.libs] Ошибка 2
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+In file included from xio.c:62:0:
+xio.h:90:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [libs] Ошибка 1
+make: *** [microblaze_0/libsrc/cpu_v2_6/src/make.libs] Ошибка 2
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+In file included from xgpio.c:74:0:
+xgpio.h:133:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from xgpio_extra.c:64:0:
+xgpio.h:133:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from xgpio_g.c:58:0:
+xgpio.h:133:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from xgpio_intr.c:63:0:
+xgpio.h:133:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from xgpio_selftest.c:59:0:
+xgpio.h:133:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+xgpio_sinit.c:60:10: fatal error: xstatus.h: No such file or directory
+ #include "xstatus.h"
+          ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [libs] Ошибка 1
+make: *** [microblaze_0/libsrc/gpio_v4_3/src/make.libs] Ошибка 2
+"Running Make libs in microblaze_0/libsrc/lwip202_v1_0/src"
+make -C microblaze_0/libsrc/lwip202_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling lwip src and adapter files"
+In file included from lwip-2.0.2/src/core/init.c:38:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [init.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/def.c:61:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [def.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/dns.c:85:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [dns.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/inet_chksum.c:48:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [inet_chksum.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ip.c:56:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [ip.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/mem.c:56:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [mem.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/memp.c:46:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [memp.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/netif.c:51:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [netif.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/pbuf.c:112:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [pbuf.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/raw.c:48:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [raw.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/stats.c:39:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [stats.o] Ошибка 1
+In file included from ../../../include/lwip/timeouts.h:41:0,
+                 from lwip-2.0.2/src/core/timeouts.c:45:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [timeouts.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/sys.c:77:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [sys.o] Ошибка 1
+In file included from lwip-2.0.2/src/netif/ethernet.c:41:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [ethernet.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv4/etharp.c:46:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [etharp.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv4/ip4_addr.c:39:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [ip4_addr.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv4/icmp.c:42:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [icmp.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv4/igmp.c:83:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [igmp.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv4/ip4.c:41:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [ip4.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv4/ip4_frag.c:41:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [ip4_frag.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv4/autoip.c:59:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [autoip.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv6/inet6.c:42:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [inet6.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv6/ip6_addr.c:43:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [ip6_addr.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv6/ip6_frag.c:42:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [ip6_frag.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv6/icmp6.c:42:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [icmp6.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv6/ip6.c:42:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [ip6.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv6/dhcp6.c:42:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [dhcp6.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv6/ethip6.c:42:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [ethip6.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv6/mld6.c:49:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [mld6.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv6/nd6.c:44:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [nd6.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/tcp.c:48:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [tcp.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/tcp_in.c:44:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [tcp_in.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/tcp_out.c:41:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [tcp_out.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/udp.c:48:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [udp.o] Ошибка 1
+In file included from lwip-2.0.2/src/core/ipv4/dhcp.c:63:0:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [dhcp.o] Ошибка 1
+contrib/ports/xilinx/sys_arch_raw.c:36:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [sys_arch_raw.o] Ошибка 1
+contrib/ports/xilinx/netif/xpqueue.c:36:10: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [xpqueue.o] Ошибка 1
+In file included from ../../../include/lwip/mem.h:40:0,
+                 from contrib/ports/xilinx/netif/xadapter.c:43:
+../../../include/lwip/opt.h:55:10: fatal error: mb_interface.h: No such file or directory
+ #include "mb_interface.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [xadapter.o] Ошибка 1
+make[1]: *** Нет правила для сборки цели `xtopology_g.o', требуемой для `liblwip4.a'.
+make[1]: Цель `libs' не была пересобрана из-за ошибок.
+make: *** [microblaze_0/libsrc/lwip202_v1_0/src/make.libs] Ошибка 2
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+In file included from xuartlite.c:84:0:
+xuartlite.h:162:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from xuartlite_g.c:56:0:
+xuartlite.h:162:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from xuartlite_intr.c:60:0:
+xuartlite.h:162:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from xuartlite_l.c:60:0:
+xuartlite_l.h:71:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+xuartlite_selftest.c:61:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+xuartlite_sinit.c:55:10: fatal error: xstatus.h: No such file or directory
+ #include "xstatus.h"
+          ^~~~~~~~~~~
+compilation terminated.
+xuartlite_stats.c:57:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [libs] Ошибка 1
+make: *** [microblaze_0/libsrc/uartlite_v3_2/src/make.libs] Ошибка 2
+"Running Make libs in microblaze_0/libsrc/xilffs_v3_8/src"
+make -C microblaze_0/libsrc/xilffs_v3_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling XilFFs Library"
+cc932.c:6:10: fatal error: xparameters.h: No such file or directory
+ #include "xparameters.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [cc932.o] Ошибка 1
+In file included from diskio.c:90:0:
+../../../include/diskio.h:16:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [diskio.o] Ошибка 1
+ff.c:117:10: fatal error: xparameters.h: No such file or directory
+ #include "xparameters.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [ff.o] Ошибка 1
+make[1]: Цель `libs' не была пересобрана из-за ошибок.
+make: *** [microblaze_0/libsrc/xilffs_v3_8/src/make.libs] Ошибка 2
+make: Цель `all' не была пересобрана из-за ошибок.
+15:51:52 **** Clean-only build of configuration Debug for project FSBLaze ****
+make clean 
+rm -rf  ./src/bootloader.o ./src/platform.o ./src/srec.o  ./src/bootloader.d ./src/platform.d ./src/srec.d  FSBLaze.elf.size  FSBLaze.elf
+' '
+15:51:52 **** Auto Build of configuration Debug for project FSBLaze ****
+make all 
+'Building file: ../src/bootloader.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bootloader.o" -I../../FSBLaze_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bootloader.d" -MT"src/bootloader.o" -o "src/bootloader.o" "../src/bootloader.c"
+In file included from ../src/bootloader.c:56:0:
+../src/blconfig.h:32:2: warning: #warning "Please provide the correct address value for the definition FLASH_IMAGE_BASEADDR." [-Wcpp]
+ #warning "Please provide the correct address value for the definition FLASH_IMAGE_BASEADDR."
+  ^~~~~~~
+'Finished building: ../src/bootloader.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../FSBLaze_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+../src/platform.c:1:10: fatal error: xparameters.h: No such file or directory
+ #include "xparameters.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/platform.o] Ошибка 1
+15:52:22 **** Auto Build of project FSBLaze_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_6/src"
+make -C microblaze_0/libsrc/standalone_v6_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_6/src"
+make -C microblaze_0/libsrc/standalone_v6_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+15:52:36 **** Clean-only build of configuration Debug for project FSBLaze ****
+make clean 
+rm -rf  ./src/bootloader.o ./src/platform.o ./src/srec.o  ./src/bootloader.d ./src/platform.d ./src/srec.d  FSBLaze.elf.size  FSBLaze.elf
+' '
+15:52:37 **** Auto Build of configuration Debug for project FSBLaze ****
+make all 
+'Building file: ../src/bootloader.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bootloader.o" -I../../FSBLaze_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bootloader.d" -MT"src/bootloader.o" -o "src/bootloader.o" "../src/bootloader.c"
+In file included from ../src/bootloader.c:56:0:
+../src/blconfig.h:32:2: warning: #warning "Please provide the correct address value for the definition FLASH_IMAGE_BASEADDR." [-Wcpp]
+ #warning "Please provide the correct address value for the definition FLASH_IMAGE_BASEADDR."
+  ^~~~~~~
+'Finished building: ../src/bootloader.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../FSBLaze_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/srec.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/srec.o" -I../../FSBLaze_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/srec.d" -MT"src/srec.o" -o "src/srec.o" "../src/srec.c"
+'Finished building: ../src/srec.c'
+' '
+'Building target: FSBLaze.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FSBLaze_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "FSBLaze.elf"  ./src/bootloader.o ./src/platform.o ./src/srec.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FSBLaze.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size FSBLaze.elf  |tee "FSBLaze.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6248	    280	   1464	   7992	   1f38	FSBLaze.elf
+'Finished building: FSBLaze.elf.size'
+' '
+15:59:30 **** Auto Build of configuration Debug for project Blaze_lesson ****
+make all 
+make: Цель `all' не требует выполнения команд.
+16:09:32 **** Auto Build of configuration Debug for project Blaze_lesson ****
+make all 
+make: Цель `all' не требует выполнения команд.
+16:14:16 **** Auto Build of configuration Debug for project Blaze_lesson ****
+make all 
+make: Цель `all' не требует выполнения команд.

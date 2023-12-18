@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]H:\FPGA\VGA\blase\blase.sdk\FSBLaze\Debug\FSBLaze.elf
+	H:\FPGA\VGA\blase\blase.runs\impl_1\blaze_wrapper.bit
+	H:\FPGA\VGA\blase\blase.sdk\Blaze_lesson\Debug\Blaze_lesson.elf
+}

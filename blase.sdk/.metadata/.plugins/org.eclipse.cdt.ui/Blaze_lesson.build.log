@@ -1,0 +1,6 @@
+16:14:16 **** Auto Build of configuration Debug for project Blaze_lesson ****
+make all 
+make: Цель `all' не требует выполнения команд.
+
+16:14:17 Build Finished (took 423ms)
+
